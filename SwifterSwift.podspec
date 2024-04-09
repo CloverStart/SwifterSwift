@@ -31,6 +31,9 @@ Pod::Spec.new do |s|
   # Foundation Extensions
   s.subspec 'Foundation' do |sp|
     sp.source_files  = 'Sources/SwifterSwift/Shared/*.swift', 'Sources/SwifterSwift/Foundation/*.swift'
+    sp.resource_bundles = {
+      'SwifterSwift_Privacy' => 'Sources/SwifterSwift/Resources/PrivacyInfo.xcprivacy'
+    }
   end
 
   # UIKit Extensions
